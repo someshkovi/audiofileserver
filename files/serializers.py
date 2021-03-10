@@ -3,7 +3,7 @@ from . import models
 
 
 class PodcastSerializer(serializers.ModelSerializer):
-    participants = 
+    participants = serializers.CharField(max_length=110)
     class Meta:
         fields = ('id','name','created_at')
         model = models.Podcast
